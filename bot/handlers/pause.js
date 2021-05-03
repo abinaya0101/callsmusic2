@@ -10,6 +10,6 @@ module.exports = Composer.command("pause", async (ctx) => {
   const result = connections.pause(ctx.chat.id);
 
   if (result == 0) await ctx.reply("Paused.");
-  else if (result == 1) await ctx.reply("Not playing!");
-  else if (result == 2) await ctx.reply("Not in call!");
+  else if (result == 1) await ctx.reply("Maaf ktl, lagu tidak dapat dimainkan!");
+  else if (result == 2) await ctx.reply("Oke thanks!");
 });
