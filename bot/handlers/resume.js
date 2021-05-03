@@ -7,7 +7,7 @@ module.exports = Composer.command("resume", async (ctx) => {
     return;
   }
   const result = connections.resume(ctx.chat.id);
-  if (result == 0) await ctx.reply("Resumed.");
+  if (result == 0) await ctx.reply("Oke ktl di lanjut.");
   else if (result == 1) await ctx.reply("Not paused!");
   else if (result == 2) await ctx.reply("Not in call!");
 });
